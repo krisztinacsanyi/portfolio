@@ -1,0 +1,92 @@
+User-agent: BLEXBot
+Disallow: /
+
+User-agent: PetalBot
+Disallow: /
+
+User-agent: Yandex
+Disallow: /
+
+User-agent: Buck
+Disallow: /
+
+User-agent: Bingbot
+Crawl-delay: 5
+
+User-agent: AdIdxBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: coccocbot-web
+Disallow: /
+
+User-agent: HubSpot Webcrawler
+Disallow: /
+
+User-agent: Slackbot
+Crawl-delay: 5
+
+User-agent: Applebot
+Crawl-delay: 5
+
+User-agent: python-requests/2.28.1
+Disallow: /
+
+User-agent: python-requests/2.25.1
+Disallow: /
+
+User-agent: OSZKbot
+Crawl-delay: 10
+
+User-agent: barkrowler
+Disallow: /
+
+User-agent: BingPreview
+Disallow: /
+
+User-agent: Zoominfobot
+Disallow: /
+
+User-agent: TelegramBot (like TwitterBot)
+Crawl-delay: 2
+
+User-agent: Mail.Ru Bot
+Disallow: /
+
+User-agent: SemanticScholarBot
+Disallow: /
+
+User-agent: Iframely
+Disallow: /
+
+User-agent: LinkedInBot
+Disallow: /
+
+User-agent: trovitBot
+Disallow: /
+
+User-agent: Researchscan
+Crawl-delay: 10
+
+User-agent: Slurp
+Crawl-delay: 5
+
+User-agent: DuckDuckBot
+Crawl-delay: 5
+
+User-agent: Baiduspider
+Crawl-delay: 2
+
+User-agent: SEMrushBot
+Disallow: /
+
+User-agent: Majestic
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: AhrefsBot
+Disallow: /
