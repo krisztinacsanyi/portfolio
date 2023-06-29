@@ -1,0 +1,118 @@
+:root {
+    --main-black-dark: #212529;
+    --main-black-light: #403a34;
+    --main-grey-darkest: #495057;
+    --main-grey-dark: #6C757D;
+    --main-grey-medium: #ADB5BD;
+    --main-grey-light: #CED4DA;
+    --main-grey-lightest: #DEE2E6;
+    --main-white-dark: #F8F9FA;
+    --main-white-light: #E9ECEF;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+
+/* Helpers */
+/**************************/
+.margin-top-10 {
+    padding-top: 10px;
+}
+
+.margin-bot-10 {
+    padding-bottom: 10px;
+}
+
+
+/* First text block */
+/**************************/
+#parallax-text .title {
+    background: white;
+    padding: 60px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#parallax-text .title h1 {
+    font-size: 35px;
+    letter-spacing: 8px;
+}
+
+#parallax-text .block {
+    background: white;
+    padding: 60px;
+    width: 820px;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+#parallax-text .line-break {
+    border-bottom: 1px solid var(--main-black-dark);
+    width: 150px;
+    margin: 0 auto;
+}
+
+#parallax-text h3 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 14px;
+    line-height: 0;
+    font-weight: 400;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    color: var(--main-black-dark);
+}
+
+#parallax-text p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.first-character {
+    font-weight: 400;
+    float: left;
+    font-size: 84px;
+    line-height: 64px;
+    padding-top: 4px;
+    padding-right: 8px;
+    padding-left: 3px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* Media Queries */
+/**************************/
+@media screen and (max-width: 959px) and (min-width: 768px) {
+    #parallax-text .block {
+        padding: 40px;
+        width: 620px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #parallax-text .block {
+        padding: 30px;
+        width: 420px;
+    }
+
+    #parallax-text h2 {
+        font-size: 30px;
+    }
+
+    #parallax-text .block {
+        padding: 30px;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    #parallax-text .block {
+        padding: 30px 15px;
+        width: 290px;
+    }
+}
