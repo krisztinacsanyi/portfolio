@@ -1,22 +1,41 @@
-import React from 'react'
-import '../assets/css/header.css'
+import React from "react";
+import "../assets/css/header.css";
 
 export default function Header() {
-    return (
-        <header className='light'>
-            <menu>
-                <ul>
-                    <li><span>Welcome</span></li>
-                    <li><span>About Us</span></li>
-                    <li><span>What we do</span></li>
-                    <li><span>Our portfolio</span></li>
-                    <li><span>Contact us</span></li>
-                </ul>
-            </menu>
-            <section>
-                <h1>Krisztina Csanyi</h1>
-                <h2>Frontend developer</h2>
-            </section>
-        </header>
-    )
+  return (
+    <header className="light">
+      <menu>
+        <ul>
+          <li>
+            <span>Objective</span>
+          </li>
+          <li>
+            <span>Projects</span>
+          </li>
+          <li>
+            <span>Experience</span>
+          </li>
+          <li>
+            <span>Education</span>
+          </li>
+          <li>
+            <span>Skills</span>
+          </li>
+          <li>
+            <span>Contact</span>
+          </li>
+        </ul>
+      </menu>
+      <section>
+        <h1>Krisztina Csanyi</h1>
+        <h2>Frontend developer</h2>
+       {/*  <h3>
+          With 3+ years experience, and a passion for collaboration and
+          innovation. Skilled in collaborating with designers and backend devs,
+          delivering scalable, responsive interfaces. Problem solver, flexible,
+          and focused on user-centric solutions.
+        </h3> */}
+      </section>
+    </header>
+  );
 }
