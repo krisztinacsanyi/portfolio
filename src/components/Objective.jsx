@@ -4,9 +4,9 @@ import "../assets/css/objective.css";
 export default function Objective() {
     return (
         <div id="objective">
-            <section className="reveal">
-                <div className="title">Objective</div>
-                <div className="block">
+            <section>
+                <div className="title reveal">Objective</div>
+                <div className="block reveal">
                     <p>
                         <span className="first-character">T</span>hroughout my professional
                         journey, I have had the privilege of working closely with skilled
