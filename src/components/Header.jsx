@@ -6,20 +6,10 @@ export default function Header() {
         <header className="light">
             <div className="header-inner">
                 <menu>
-                    <ul>
-                        <li>
-                            <span>Objective</span>
-                        </li>
-                        <li>
-                            <span>Projects</span>
-                        </li>
-                        <li>
-                            <span>Skills</span>
-                        </li>
-                        <li>
-                            <span>Contact</span>
-                        </li>
-                    </ul>
+                    <a href="#objective">Objective</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#contact">Contact</a>
                 </menu>
                 <section>
                     <h1>Krisztina Csanyi</h1>

@@ -2,6 +2,7 @@ import React from "react"
 import Header from "./Header"
 import Objective from "./Objective"
 import WebFont from "webfontloader"
+import "../assets/js/app"
 import "../assets/css/app.css"
 
 function App() {

@@ -23,11 +23,11 @@ header {
     justify-content: space-between;
 }
 
-header menu ul {
+header menu {
     width: auto;
 }
 
-body menu ul li {
+body menu a {
     color: var(--main-black-light);
     list-style-type: none;
     line-height: 50px;
@@ -37,7 +37,7 @@ body menu ul li {
     transition: all 300ms ease-out;
 }
 
-body menu ul li:hover {
+body menu a:hover {
     color: var(--main-grey-medium);
     cursor: pointer;
 }
@@ -89,7 +89,7 @@ h3 {
         padding: 30px 15px;
     }
 
-    header ul {
+    header {
         margin: 0 !important;
         padding: 0 !important;
     }
@@ -111,7 +111,7 @@ h3 {
         color: var(--main-white-dark);
     }
 
-    header menu ul {
+    header menu {
         width: auto;
         list-style: none;
         list-style-type: none;
