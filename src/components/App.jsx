@@ -12,7 +12,7 @@ function App() {
     })
     WebFont.load({
         google: {
-            families: ["Oswald", "Source Sans Pro", "Raleway"],
+            families: ["Oswald", "Source Sans Pro"],
         },
     })
     return (
