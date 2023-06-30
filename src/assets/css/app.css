@@ -1,7 +1,7 @@
 :root {
     --main-black-dark: #212529;
     --main-black-light: #403a34;
-    --main-grey-darkest: #495057;
+    --main-grey-darkest: #574e49;
     --main-grey-dark: #6C757D;
     --main-grey-medium: #ADB5BD;
     --main-grey-light: #CED4DA;
@@ -16,4 +16,16 @@
 
 body {
     margin: 0;
+}
+
+.reveal, .loadTop {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+}
+
+.reveal.active, .loadTop.active {
+    transform: translateY(0);
+    opacity: 1;
 }

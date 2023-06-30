@@ -3,6 +3,7 @@ import Header from "./Header"
 import Objective from "./Objective"
 import WebFont from "webfontloader"
 import SmoothScroll from "smooth-scroll"
+import "../assets/js/app"
 import "../assets/css/app.css"
 
 function App() {

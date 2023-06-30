@@ -11,12 +11,11 @@ export default function Header() {
                     <a href="#skills">Skills</a>
                     <a href="#contact">Contact</a>
                 </menu>
-                <section>
+                <section className="loadTop">
                     <h1>Krisztina Csanyi</h1>
                     <h2>Frontend developer</h2>
                 </section>
             </div>
-
         </header>
     );
 }
