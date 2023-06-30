@@ -25,6 +25,9 @@ header {
 
 header menu {
     width: auto;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
 }
 
 body menu a {
@@ -35,6 +38,7 @@ body menu a {
     font-size: Min(36px, 6.6vw);
     text-transform: lowercase;
     transition: all 300ms ease-out;
+    text-decoration: none;
 }
 
 body menu a:hover {
