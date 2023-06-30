@@ -13,12 +13,6 @@ export default function Header() {
             <span>Projects</span>
           </li>
           <li>
-            <span>Experience</span>
-          </li>
-          <li>
-            <span>Education</span>
-          </li>
-          <li>
             <span>Skills</span>
           </li>
           <li>
