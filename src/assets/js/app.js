@@ -20,7 +20,13 @@ function loadTop() {
     })
 }
 
-window.addEventListener('load', () => {
+if (document.readyState === "complete") {
     loadTop()
     window.addEventListener('scroll', reveal)
-})
+} else {
+    window.addEventListener('load', () => {
+        loadTop()
+        window.addEventListener('scroll', reveal)
+    })
+}
+
