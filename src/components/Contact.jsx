@@ -41,7 +41,7 @@ export default function Contact() {
             <i class="fa-solid fa-square-envelope"></i>
           </a>
           <a
-            href="/public/pdf/CSKR_cv_en.pdf"
+            href="/portfolio/pdf/CSKR_cv_en.pdf"
             className="generic-anchor"
             target="_blank"
             rel="noreferrer"

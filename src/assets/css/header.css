@@ -135,6 +135,7 @@ h3 {
 
   header menu {
     padding: 0;
+    gap: 7px;
     margin: 10px auto;
   }
 }
