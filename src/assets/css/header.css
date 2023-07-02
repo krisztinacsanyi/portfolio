@@ -34,12 +34,12 @@ header menu {
   flex-direction: column;
 }
 
-body menu a {
-  color: var(--main-black-light);
+menu a {
+  color: var(--main-grey-dark);
   list-style-type: none;
   line-height: 50px;
   font-family: "Source Sans Pro", sans-serif;
-  font-size: Min(36px, 6.6vw);
+  font-size: Min(36px, 5vw);
   text-transform: lowercase;
   transition: all 300ms ease-out;
   text-decoration: none;

@@ -1,9 +1,12 @@
-import "../../assets/css/projects.css";
-
 const Card = ({ title, at, link, content, index }) => (
-  <div className={`div${parseInt(index) + 1} card reveal`}>
+  <div className={`div${parseInt(index) + 1} card`}>
     <h2>
-      <a href={link} target="_blank" rel="noreferrer" className="underline-magical">
+      <a
+        href={link}
+        target="_blank"
+        rel="noreferrer"
+        className="underline-magical"
+      >
         {title}
       </a>
       {at}

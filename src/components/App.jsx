@@ -2,12 +2,14 @@ import React, { useEffect } from "react";
 import Header from "./Header";
 import Objective from "./Objective";
 import Projects from "./Projects";
-import Contact from "./Contact";
+import Skills from "./Skills";
 import WebFont from "webfontloader";
 import SmoothScroll from "smooth-scroll";
 import Parallax from "parallax-js";
 import "../assets/js/app";
 import "../assets/css/app.css";
+import Experience from "./Experience";
+import Contact from "./Contact";
 
 function App() {
   new SmoothScroll('a[href*="#"]', {
@@ -47,7 +49,9 @@ function App() {
         </div>
       </section>
       <Projects />
-      <Contact />
+      <Skills />
+      <Experience />
+      <Contact/>
     </div>
   );
 }

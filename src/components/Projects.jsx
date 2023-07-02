@@ -27,9 +27,9 @@ export default function Projects() {
     },
   ];
   return (
-    <>
+    <section id="projects">
       <div className="title reveal">Projects</div>
-      <section className="card-grid">
+      <section className="card-grid reveal">
         {CARDS.map((element, index) => (
           <Card
             title={element.title}
@@ -41,6 +41,6 @@ export default function Projects() {
           />
         ))}
       </section>
-    </>
+    </section>
   );
 }

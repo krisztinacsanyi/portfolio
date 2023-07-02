@@ -1,0 +1,111 @@
+.image {
+  height: 500px;
+  overflow: hidden;
+  position: relative;
+  background: url("/public/img/parallax.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.image-text {
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--main-grey-dark);
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  max-width: 80%;
+  margin: 0 auto;
+  z-index: 1000000;
+}
+
+.skill-container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  justify-content: center;
+  place-items: center;
+  gap: 20px 15px;
+  width: 100%;
+  padding: 20px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+  margin-top: 50px;
+  max-width: 1200px;
+}
+
+.skill {
+  border-color: rgb(204, 204, 204);
+  align-items: center;
+  border: 3px solid;
+  border-radius: 50px;
+  display: flex;
+  height: 100px;
+  justify-content: center;
+  transition: -webkit-transform 0.3s ease-out;
+  transition: transform 0.3s ease-out;
+  transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
+  width: 100px;
+}
+
+.skill span {
+  font-weight: 900;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+}
+
+.skill:hover {
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+}
+
+.skill img {
+  height: 50px;
+  width: 50px;
+}
+
+/* Media Queries */
+/**************************/
+
+@media screen and (max-width: 800px) {
+  .skill-container {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .skill-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .skill-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .skill-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .skill-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
