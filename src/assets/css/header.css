@@ -1,141 +1,156 @@
-/* Header main formats */
+/* The first navigation */
+/**************************/
+.anchornav {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.anchornav li {
+    display: block;
+}
+
+.anchornav li::after {
+    content: "";
+    width: 1.3rem;
+    display: block;
+    height: 2px;
+    background: black;
+}
+
+.anchornav li:last-child::after {
+    display: none;
+}
+
+.anchornav a {
+    display: block;
+    padding: 1em 0;
+    text-transform: uppercase;
+    font-size: Min(16px, 4vw);
+    letter-spacing: 1.4px;
+    color: inherit;
+    transition: all 0.3s cubic-bezier(0.05, 0.69, 0.14, 1);
+}
+
+.anchornav a span {
+    display: inline;
+    padding: 0.5em 0 0;
+    opacity: 0.3;
+    letter-spacing: normal;
+    text-transform: none;
+    font-size: 12px;
+}
+
+.anchornav a:hover {
+    color: var(--main-grey-medium);
+}
+
+.anchornav a:hover span {
+    opacity: 1;
+    color: var(--main-grey-dark);
+}
+
+/* The different sections */
 /**************************/
 header {
-  position: relative;
-  padding: 50px 30px;
-  overflow: hidden;
-  position: relative;
-  width: 100%;
-  background-image: url("/public/img/header.jpg");
-  background-attachment: fixed;
-  background-size: cover;
-  -moz-background-size: cover;
-  -webkit-background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: 100% 100%;
-  align-items: center;
-  height: 60vh;
+    font-family: "Source Sans Pro", sans-serif;
+    position: relative;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: stretch;
+    min-height: 100vh;
+    width: 100%;
+    align-content: center;
+    padding: 0 50px 0 75px;
+    background-color: var(--main-black-dark);
+    color: var(--main-white-dark);
 }
 
-.header-inner {
-  display: flex;
-  flex-direction: row;
-  gap: 4vw;
-  justify-content: space-between;
+header svg {
+    position: absolute;
+    top: -50px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 50px;
 }
 
-/* Menu */
+header svg.bottom {
+    bottom: 0;
+    top: auto;
+    fill: grey;
+}
+
+header .header-inner {
+    height: 100%;
+    max-width: 800px;
+    margin: auto auto auto 0;
+}
+
+/* Typograpghy */
 /**************************/
-header menu {
-  width: auto;
-  display: flex;
-  gap: 10px;
-  flex-direction: column;
+header h1 {
+    font-weight: 900;
+    font-family: "Oswald", sans-serif;
+    margin: 0 0 30px;
+    line-height: 1;
+    letter-spacing: 3px;
+    font-size: Min(70px, 15vw);
+    text-align: left;
 }
 
-menu a {
-  color: var(--main-grey-dark);
-  list-style-type: none;
-  line-height: 50px;
-  font-family: "Source Sans Pro", sans-serif;
-  font-size: Min(36px, 5vw);
-  text-transform: lowercase;
-  transition: all 300ms ease-out;
-  text-decoration: none;
+header .pre {
+    display: inline-block;
+    font-size: 12px;
+    margin: 0;
+    opacity: 0.8;
+    letter-spacing: 1.4px;
+    word-spacing: 0.2rem;
+    text-transform: uppercase;
+    margin-bottom: 1em;
+    color: inherit;
+    transition: all 0.3s ease;
 }
 
-body menu a:hover {
-  color: var(--main-grey-medium);
-  cursor: pointer;
+header a {
+    text-decoration: none;
 }
 
-/* Titles */
-/**************************/
-
-header section {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  flex-direction: column;
+header .pre span {
+    font-size: 0.9em;
+    margin-right: 0.4em;
+    opacity: 0.5;
 }
 
-h1 {
-  padding: 0;
-  margin: 0;
-  font-family: "Oswald", sans-serif;
-  font-size: Min(50px, 8vw);
-  letter-spacing: 6px;
-  text-align: center;
-  color: var(--main-white-light);
-  font-weight: 400;
-  text-transform: uppercase;
+header .pre:hover {
+    opacity: 1;
 }
 
-h2 {
-  font-family: "Oswald", sans-serif;
-  font-size: Min(28px, 6.5vw);
-  font-weight: 600;
-  color: var(--main-black-dark);
+header p {
+    font-size: 0.75rem;
+    line-height: 1.4;
 }
 
-h3 {
-  color: var(--main-black-light);
-  font-family: "Oswald", sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  max-width: 500px;
-  text-align: justify;
+header p a {
+    font-weight: bold;
+    color: inherit;
+    transition: all 0.3s ease;
+}
+
+header p a:hover {
+    border-bottom: 0.1875rem solid;
 }
 
 /* Media Queries */
 /**************************/
-@media screen and (max-width: 850px) {
-  header {
-    /* flex-direction: column;*/
-    padding: 30px 15px;
-  }
-
-  header {
-    margin: 0 !important;
-    padding: 0 !important;
-  }
+@media (min-width: 30rem) {
+    header p {
+        font-size: 0.875rem;
+    }
 }
 
-@media screen and (max-width: 767px) {
-  header {
-    padding-top: 80px;
-    padding-bottom: 80px;
-  }
-}
-
-@media screen and (max-width: 760px) {
-  .header-inner {
-    flex-direction: column;
-  }
-
-  h1 {
-    font-weight: 900;
-    color: var(--main-grey-darkest);
-  }
-
-  h2 {
-    color: var(--main-white-dark);
-  }
-
-  header menu {
-    width: auto;
-    list-style: none;
-    list-style-type: none;
-    display: flex;
-    flex-direction: row;
-    gap: 15px;
-  }
-
-  header menu {
-    padding: 0;
-    gap: 7px;
-    margin: 10px auto;
-  }
+@media screen and (max-width: 450px) {
+    header {
+        padding: 0 15px 0 30px;
+    }
 }

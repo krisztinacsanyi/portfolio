@@ -32,6 +32,10 @@ html {
   transition: 1s all ease;
 }
 
+.loadTop{
+    transform: translateY(-500px);
+}
+
 .reveal.active,
 .loadTop.active {
   transform: translateY(0);
