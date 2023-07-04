@@ -8,7 +8,7 @@ export default function Experience() {
       title: "FRONTEND | FULLSTACK DEVELOPER",
       subtitle: "Case Solvers",
       content:
-        "During my contract at this company, I served as the sole frontend developer, allowing me to handle every aspect of page creation from inception to completion. This involved conceptualizing the design based on business requirements, establishing database connections, and developing both the backend and frontend components. Additionally, I undertook the crucial responsibilities of SEO management, conducting performance testing and optimization, and adhering to clean code principles. Working closely with my teammates, I collaborated on updating application versions utilizing Git. Furthermore, I embraced valuable learning opportunities within the organization, expanding my skill set with Node.js and React.js.",
+        "As an employee at this company, I served as the sole frontend developer, allowing me to handle every aspect of page creation from inception to completion. This involved conceptualizing the design based on business requirements, establishing database connections, and developing both the backend and frontend components. Additionally, I undertook the crucial responsibilities of SEO management, conducting performance testing and optimization, and adhering to clean code principles. Working closely with my teammates, I collaborated on updating application versions utilizing Git. Furthermore, I embraced valuable learning opportunities within the organization, expanding my skill set with Node.js and React.js.",
       time: "2020 - now",
     },
     {

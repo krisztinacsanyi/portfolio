@@ -23,7 +23,7 @@ export default function Projects() {
             at: " @ GitHub",
             link: "https://github.com/krisztinacsanyi",
             content:
-                "I have made some personal projects during my education at Corvinus University of Budapest, Webler Oktatósútió and Webuni. Some of them have made it to GitHub, which can be accessed by going to the contact section of this page or clicking the title.",
+                "I have made some personal projects during my education at Corvinus University of Budapest, Webler Oktatóstúdió and Webuni. Some of them have made it to GitHub, which can be accessed by going to the contact section of this page or clicking the title.",
         },
     ];
     return (
