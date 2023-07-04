@@ -44,6 +44,7 @@ export default function Skills() {
                 </div>
             </div>
             <div className="image">
+                <div className="image-wrap"></div>
                 <div className="image-text">
                     Even after obtaining all these skills, I never feel satisfied
                     enough. I have a deep desire to learn everything and have broad
