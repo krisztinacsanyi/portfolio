@@ -40,6 +40,7 @@
     text-transform: none;
     font-size: 12px;
     transition: all 0.3s cubic-bezier(0.05, 0.69, 0.14, 1);
+    color: var(--main-grey-lightest);
 }
 
 .anchornav a:hover {
@@ -128,6 +129,7 @@ header .pre span {
     font-size: 0.9em;
     margin-right: 0.4em;
     opacity: 0.5;
+    color: var(--main-grey-medium);
 }
 
 header .pre:hover {

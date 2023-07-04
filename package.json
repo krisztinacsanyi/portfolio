@@ -9,6 +9,7 @@
         "@testing-library/user-event": "^13.5.0",
         "bulma-start": "^0.0.5",
         "gsap": "^3.12.2",
+        "lozad": "^1.16.0",
         "parallax-js": "^3.1.0",
         "react": "^18.2.0",
         "react-bootstrap": "^2.8.0",
