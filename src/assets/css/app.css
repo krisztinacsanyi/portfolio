@@ -56,6 +56,7 @@ html {
   border: 5px solid var(--main-grey-dark);
   padding: 15px 30px;
   width: fit-content;
+  user-select: none;
 }
 
 /* Parallax boxes */

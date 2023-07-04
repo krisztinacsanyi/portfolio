@@ -15,10 +15,16 @@ function reveal() {
 
 function loadTop() {
     var loadTops = document.querySelectorAll('.loadTop')
-    loadTops.forEach(element => {
-        element.classList.add('active')
-    })
+    for (var i = 0; i < loadTops.length; i++) {
+        loadTops[i].classList.add('active')
+    }
 }
+
+function mobileAndTabletCheck() {
+    if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+        document.querySelector('.image-wrap').classList.add('mobile')
+    }
+};
 
 // requestAnimationFrame Polyfill
 (function () {
@@ -45,15 +51,17 @@ function loadTop() {
     };
 }());
 
-
-
 if (document.readyState === "complete") {
+    console.log('ready')
     loadTop()
     window.addEventListener('scroll', reveal)
+    mobileAndTabletCheck()
 } else {
     window.addEventListener('load', () => {
+        console.log('windows loaded')
         loadTop()
         window.addEventListener('scroll', reveal)
+        mobileAndTabletCheck()
     })
 }
 

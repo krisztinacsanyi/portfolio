@@ -3,12 +3,12 @@ import "../assets/css/header.css";
 
 export default function Header() {
     return (
-        <header class="header" id="header">
-            <div class="header-inner">
-                <div class="block">
-                    <div class="pre loadTop"><span>#0</span>Krisztina Csanyi | Frontend developer</div>
-                    <h1 className="loadTop">Hi there.</h1>
-                    <ul class="anchornav">
+        <header className="header reveail" id="header">
+            <div className="header-inner">
+                <div className="block">
+                    <div className="pre"><span>#0</span>Krisztina Csanyi | Frontend developer</div>
+                    <h1>Hi there.</h1>
+                    <ul className="anchornav">
                         <li><a href="#objective">Objective <span>#1 What's the purpose</span></a></li>
                         <li><a href="#projects">Projects <span>#2 What I worked on</span></a></li>
                         <li><a href="#experience">Experience <span>#3 What knowledge I have</span></a></li>

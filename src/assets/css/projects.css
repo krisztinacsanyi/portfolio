@@ -33,7 +33,6 @@
     box-shadow: 0px 0px 5px -1px rgba(0, 0, 0, 0.43);
     transition: all 200ms ease-in;
     cursor: auto;
-    user-select: none;
 }
 
 .card:hover {
@@ -47,6 +46,7 @@
     margin: 0 0 5px 0;
     color: var(--main-black-dark);
     font-family: "Oswald", sans-serif;
+    user-select: none;
 }
 
 .card p {
@@ -166,6 +166,7 @@
     padding-top: 40px;
     padding-bottom: 120px;
     color: var(--main-black-dark);
+    user-select: none;
 }
 
 .want-more h2 {
